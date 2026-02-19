@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="hy" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ուսումնական նախագիծ «Աշակերտական օմբուդսմեն» | Գյումրու թիվ 1 ավագ դպրոց</title>
+  <meta name="description" content="11դ դասարանի ուսումնական նախագիծ՝ սովորողների իրավունքների պաշտպանության համար">
+  <style>
+    :root {
+      --bg: #0a192f;
+      --dark: #000814;
+      --text: #e6f1ff;
+      --light: #ccd6f6;
+      --accent: #4a6fa5;
+    }
+    body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+    header { background: linear-gradient(to bottom, var(--dark), var(--bg)); text-align: center; padding: 40px 20px; border-bottom: 3px solid var(--accent); }
+    
+    /* Նոր դասավորություն 4 պատկերների համար */
+    .header-icons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 30px;
+      justify-items: center;
+      margin: 20px 0;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .icon {
+      width: 120px;
+      height: auto;
+      border: 2px solid var(--light);
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+    .icon:hover {
+      transform: scale(1.08);
+    }
+    
+    h1 { margin: 10px 0; font-size: 2.6em; }
+    h2 { color: var(--accent); border-bottom: 2px solid var(--light); padding-bottom: 8px; margin-top: 35px; }
+    nav { background: var(--dark); padding: 15px; text-align: center; border-bottom: 1px solid #1e3a5f; }
+    nav a { color: var(--text); margin: 0 15px; text-decoration: none; font-weight: 500; }
+    nav a:hover { color: var(--accent); }
+    main { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+    section { background: rgba(255,255,255,0.04); padding: 25px; margin-bottom: 30px; border-radius: 10px; border: 1px solid #1e3a5f; box-shadow: 0 4px 15px rgba(0,0,0,0.4); }
+    ol, ul { padding-left: 25px; }
+    footer { text-align: center; padding: 20px; background: var(--dark); font-size: 0.95em; border-top: 1px solid #1e3a5f; }
+    #language-selector { text-align: center; padding: 15px; background: var(--dark); }
+    #language-selector button { background: var(--accent); color: white; border: none; padding: 8px 20px; margin: 0 10px; cursor: pointer; border-radius: 5px; }
+    #language-selector button:hover { background: #3a5a8c; }
+    .content { display: none; }
+    .active { display: block; }
+    .pdf-link { color: var(--accent); text-decoration: underline; }
+    .pdf-link:hover { color: #6a9ae0; }
+    @media (max-width: 768px) { 
+      h1 { font-size: 2em; } 
+      .header-icons { gap: 20px; }
+      .icon { width: 100px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="language-selector">
+    <button onclick="switchLanguage('hy')">Հայերեն</button>
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('ru')">Русский</button>
+  </div>
+
+  <!-- Հայերեն բովանդակություն -->
+  <div id="content-hy" class="content active">
+    <header>
+      <div class="header-icons">
+        <img src="flag.png" alt="Հայաստանի Հանրապետության դրոշ" class="icon">
+        <img src="coat_of_arms.png" alt="Հայաստանի Հանրապետության զինանշան" class="icon">
+        <img src="dproc.png" alt="Գյումրու թիվ 1 ավագ դպրոցի զինանշան" class="icon">
+        <img src="ombuds.png" alt="Աշակերտական օմբուդսմեն նախագծի զինանշան" class="icon">
+      </div>
+      <h1>ՀՀ ԿԳՄՍՆ «Գյումրու թիվ 1 ավագ դպրոց» ՊՈԱԿ<br>Ուսումնական նախագիծ «Աշակերտական օմբուդսմեն» — 11դ</h1>
+      <p>Սովորողների իրավունքների պաշտպան</p>
+    </header>
+
+    <nav>
+      <a href="#home">Գլխավոր</a>
+      <a href="#about">Օմբուդսմենը</a>
+      <a href="#rights">Իրավունքներ</a>
+      <a href="#complaint">Ինչպե՞ս դիմել</a>
+      <a href="#documents">Փաստաթղթեր</a>
+      <a href="#team">Թիմ</a>
+      <a href="#contact">Հետադարձ կապ</a>
+    </nav>
+
+    <main>
+      <section id="home">
+        <h2>Բարի գալուստ</h2>
+        <p>Սա 11դ դասարանի (հումանիտար իրավագիտական հոսք) ուսումնական նախագիծն է՝ նվիրված սովորողների իրավունքների պաշտպանությանը։</p>
+      </section>
+
+      <section id="about">
+        <h2>Օմբուդսմենը</h2>
+        <p>Օմբուդսմենը անկախ պաշտոնատար անձ է, որը պաշտպանում է սովորողների խախտված իրավունքները՝ համաձայն ՀՀ օրենսդրության և միջազգային նորմերի։</p>
+      </section>
+
+      <section id="rights">
+        <h2>Սովորողների իրավունքներն են՝</h2>
+        <ol>
+          <li>Ստանալու հանրակրթություն՝ պետական չափորոշչին համապատասխան։</li>
+          <li>Ընտրելու ուսումնական հաստատություն և ուսուցման ձև։</li>
+          <li>Անվճար օգտվելու ուսումնական բազայից։</li>
+          <li>Մասնակցելու միջոցառումներին։</li>
+          <li>Պաշտպանված լինելու ճնշումներից և ոտնձգություններից։</li>
+          <li>Մասնակցելու դպրոցի կառավարմանը։</li>
+          <li>Ստանալու տեղեկատվություն։</li>
+          <li>Ազատ արտահայտելու կարծիքը։</li>
+        </ol>
+      </section>
+
+      <section id="complaint">
+        <h2>Ինչպե՞ս դիմել օմբուդսմենին</h2>
+        <ol>
+          <li>Դպրոցի տուփով (անանուն կամ անվանական)։</li>
+          <li>Անձամբ մոտենալով օմբուդսմենին։</li>
+          <li>Էլեկտրոնային հասցեով՝ <a href="mailto:ombudsofN1.official@gmail.com">ombudsofN1.official@gmail.com</a>։</li>
+        </ol>
+      </section>
+
+      <section id="documents">
+        <h2>Կանոնադրություն և փաստաթղթեր</h2>
+        <p>Ներբեռնեք կամ դիտեք մեր նախագծի կարևոր փաստաթղթերը։</p>
+        <ul>
+          <li><a href="ombudsman-charter.pdf" class="pdf-link" target="_blank">Կանոնադրություն (PDF)</a></li>
+          <li><a href="phone-regulation.pdf" class="pdf-link" target="_blank">Հեռախոսների կարգավորման կանոններ (PDF)</a></li>
+          <li><a href="ombudsman-report-2026.pdf" class="pdf-link" target="_blank">Օմբուդսմենի զեկույց 2025-2026 (PDF)</a></li>
+        </ul>
+      </section>
+
+      <section id="team">
+        <h2>Մեր թիմը</h2>
+        <p>Մեր հանձնախմբի անդամներն են՝</p>
+        <ul>
+          <li>Ավետիք Առաքելյան (Սովորողների իրավունքների պաշտպան)</li>
+          <li>Տիգրան Աբգարյան</li>
+          <li>Հռիփսիմե Զադուրյան</li>
+          <li>Անժելա Արիստակեսյան</li>
+          <li>Մանե Հարթենյան</li>
+          <li>Անի Նորսոյան</li>
+          <li>Լիանա Պողոսյան</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Հետադարձ կապ</h2>
+        <p><a href="mailto:ombudsofN1.official@gmail.com" class="pdf-link">ombudsofN1.official@gmail.com</a></p>
+        <p>Հեռախոսահամար՝ <a href="tel:+37494876400" class="pdf-link">+374 94 87 64 00</a></p>
+        <p>Մեր Յութուբյան ալիք՝ <a href="https://www.youtube.com/@ombudsofN1.official" target="_blank" class="pdf-link">ombudsofN1.official</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 ՀՀ ԿԳՄՍՆ «Գյումրու թիվ 1 ավագ դպրոց» ՊՈԱԿ — Ուսումնական նախագիծ «Աշակերտական օմբուդսմեն» | 11դ դասարան</p>
+    </footer>
+  </div>
+
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
+      document.getElementById('content-' + lang).classList.add('active');
+      document.documentElement.lang = lang;
+      const titles = {
+        hy: "Ուսումնական նախագիծ «Աշակերտական օմբուդսմեն» | ՀՀ ԿԳՄՍՆ «Գյումրու թիվ 1 ավագ դպրոց» ՊՈԱԿ",
+        en: "Educational Project \"Student Ombudsman\" | RA MESCS \"Gyumri No. 1 Senior School\" SOE",
+        ru: "Образовательный проект «Школьный омбудсмен» | МОНКС РА «Гюмрийская старшая школа №1» ГНКО"
+      };
+      document.title = titles[lang] || titles.hy;
+    }
+    switchLanguage('hy');
+  </script>
+</body>
+</html>
