@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ուսումնական նախագիծ «Աշակերտական օմբուդսմեն» | Գյումրու թիվ 1 ավագ դպրոց</title>
   <meta name="description" content="11դ դասարանի ուսումնական նախագիծ՝ սովորողների իրավունքների պաշտպանության համար">
+
   <style>
     :root {
       --bg: #0a192f;
@@ -13,10 +14,20 @@
       --light: #ccd6f6;
       --accent: #4a6fa5;
     }
-    body { margin: 0; font-family: 'Segoe UI', Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
-    header { background: linear-gradient(to bottom, var(--dark), var(--bg)); text-align: center; padding: 40px 20px; border-bottom: 3px solid var(--accent); }
+    body { 
+      margin: 0; 
+      font-family: 'Segoe UI', Arial, sans-serif; 
+      background: var(--bg); 
+      color: var(--text); 
+      line-height: 1.7; 
+    }
+    header { 
+      background: linear-gradient(to bottom, var(--dark), var(--bg)); 
+      text-align: center; 
+      padding: 40px 20px; 
+      border-bottom: 3px solid var(--accent); 
+    }
     
-    /* Նոր դասավորություն 4 պատկերների համար */
     .header-icons {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -35,9 +46,7 @@
       box-shadow: 0 6px 16px rgba(0,0,0,0.5);
       transition: transform 0.3s ease;
     }
-    .icon:hover {
-      transform: scale(1.08);
-    }
+    .icon:hover { transform: scale(1.08); }
     
     h1 { margin: 10px 0; font-size: 2.6em; }
     h2 { color: var(--accent); border-bottom: 2px solid var(--light); padding-bottom: 8px; margin-top: 35px; }
@@ -45,16 +54,42 @@
     nav a { color: var(--text); margin: 0 15px; text-decoration: none; font-weight: 500; }
     nav a:hover { color: var(--accent); }
     main { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
-    section { background: rgba(255,255,255,0.04); padding: 25px; margin-bottom: 30px; border-radius: 10px; border: 1px solid #1e3a5f; box-shadow: 0 4px 15px rgba(0,0,0,0.4); }
-    ol, ul { padding-left: 25px; }
-    footer { text-align: center; padding: 20px; background: var(--dark); font-size: 0.95em; border-top: 1px solid #1e3a5f; }
-    #language-selector { text-align: center; padding: 15px; background: var(--dark); }
-    #language-selector button { background: var(--accent); color: white; border: none; padding: 8px 20px; margin: 0 10px; cursor: pointer; border-radius: 5px; }
+    section { 
+      background: rgba(255,255,255,0.04); 
+      padding: 25px; 
+      margin-bottom: 30px; 
+      border-radius: 10px; 
+      border: 1px solid #1e3a5f; 
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4); 
+    }
+    footer { 
+      text-align: center; 
+      padding: 20px; 
+      background: var(--dark); 
+      font-size: 0.95em; 
+      border-top: 1px solid #1e3a5f; 
+    }
+    #language-selector { 
+      text-align: center; 
+      padding: 15px; 
+      background: var(--dark); 
+    }
+    #language-selector button { 
+      background: var(--accent); 
+      color: white; 
+      border: none; 
+      padding: 10px 20px; 
+      margin: 0 8px; 
+      cursor: pointer; 
+      border-radius: 5px; 
+      font-size: 1em;
+    }
     #language-selector button:hover { background: #3a5a8c; }
     .content { display: none; }
     .active { display: block; }
     .pdf-link { color: var(--accent); text-decoration: underline; }
     .pdf-link:hover { color: #6a9ae0; }
+
     @media (max-width: 768px) { 
       h1 { font-size: 2em; } 
       .header-icons { gap: 20px; }
@@ -63,20 +98,21 @@
   </style>
 </head>
 <body>
+
   <div id="language-selector">
     <button onclick="switchLanguage('hy')">Հայերեն</button>
     <button onclick="switchLanguage('en')">English</button>
     <button onclick="switchLanguage('ru')">Русский</button>
   </div>
 
-  <!-- Հայերեն բովանդակություն -->
+  <!-- Հայերեն -->
   <div id="content-hy" class="content active">
     <header>
       <div class="header-icons">
-        <img src="flag.png" alt="Հայաստանի Հանրապետության դրոշ" class="icon">
-        <img src="coat_of_arms.png" alt="Հայաստանի Հանրապետության զինանշան" class="icon">
+        <img src="flag.png" alt="Հայաստանի դրոշ" class="icon">
+        <img src="coat_of_arms.png" alt="Հայաստանի զինանշան" class="icon">
         <img src="dproc.png" alt="Գյումրու թիվ 1 ավագ դպրոցի զինանշան" class="icon">
-        <img src="ombuds.png" alt="Աշակերտական օմբուդսմեն նախագծի զինանշան" class="icon">
+        <img src="ombuds.png" alt="Աշակերտական օմբուդսմենի զինանշան" class="icon">
       </div>
       <h1>ՀՀ ԿԳՄՍՆ «Գյումրու թիվ 1 ավագ դպրոց» ՊՈԱԿ<br>Ուսումնական նախագիծ «Աշակերտական օմբուդսմեն» — 11դ</h1>
       <p>Սովորողների իրավունքների պաշտպան</p>
@@ -93,18 +129,15 @@
     </nav>
 
     <main>
-      <section id="home">
-        <h2>Բարի գալուստ</h2>
+      <section id="home"><h2>Բարի գալուստ</h2>
         <p>Սա 11դ դասարանի (հումանիտար իրավագիտական հոսք) ուսումնական նախագիծն է՝ նվիրված սովորողների իրավունքների պաշտպանությանը։</p>
       </section>
 
-      <section id="about">
-        <h2>Օմբուդսմենը</h2>
+      <section id="about"><h2>Օմբուդսմենը</h2>
         <p>Օմբուդսմենը անկախ պաշտոնատար անձ է, որը պաշտպանում է սովորողների խախտված իրավունքները՝ համաձայն ՀՀ օրենսդրության և միջազգային նորմերի։</p>
       </section>
 
-      <section id="rights">
-        <h2>Սովորողների իրավունքներն են՝</h2>
+      <section id="rights"><h2>Սովորողների իրավունքներն են՝</h2>
         <ol>
           <li>Ստանալու հանրակրթություն՝ պետական չափորոշչին համապատասխան։</li>
           <li>Ընտրելու ուսումնական հաստատություն և ուսուցման ձև։</li>
@@ -117,8 +150,7 @@
         </ol>
       </section>
 
-      <section id="complaint">
-        <h2>Ինչպե՞ս դիմել օմբուդսմենին</h2>
+      <section id="complaint"><h2>Ինչպե՞ս դիմել օմբուդսմենին</h2>
         <ol>
           <li>Դպրոցի տուփով (անանուն կամ անվանական)։</li>
           <li>Անձամբ մոտենալով օմբուդսմենին։</li>
@@ -126,8 +158,7 @@
         </ol>
       </section>
 
-      <section id="documents">
-        <h2>Կանոնադրություն և փաստաթղթեր</h2>
+      <section id="documents"><h2>Կանոնադրություն և փաստաթղթեր</h2>
         <p>Ներբեռնեք կամ դիտեք մեր նախագծի կարևոր փաստաթղթերը։</p>
         <ul>
           <li><a href="ombudsman-charter.pdf" class="pdf-link" target="_blank">Կանոնադրություն (PDF)</a></li>
@@ -136,8 +167,7 @@
         </ul>
       </section>
 
-      <section id="team">
-        <h2>Մեր թիմը</h2>
+      <section id="team"><h2>Մեր թիմը</h2>
         <p>Մեր հանձնախմբի անդամներն են՝</p>
         <ul>
           <li>Ավետիք Առաքելյան (Սովորողների իրավունքների պաշտպան)</li>
@@ -150,8 +180,7 @@
         </ul>
       </section>
 
-      <section id="contact">
-        <h2>Հետադարձ կապ</h2>
+      <section id="contact"><h2>Հետադարձ կապ</h2>
         <p><a href="mailto:ombudsofN1.official@gmail.com" class="pdf-link">ombudsofN1.official@gmail.com</a></p>
         <p>Հեռախոսահամար՝ <a href="tel:+37494876400" class="pdf-link">+374 94 87 64 00</a></p>
         <p>Մեր Յութուբյան ալիք՝ <a href="https://www.youtube.com/@ombudsofN1.official" target="_blank" class="pdf-link">ombudsofN1.official</a></p>
@@ -163,18 +192,195 @@
     </footer>
   </div>
 
+  <!-- English -->
+  <div id="content-en" class="content">
+    <header>
+      <div class="header-icons">
+        <img src="flag.png" alt="Flag of Armenia" class="icon">
+        <img src="coat_of_arms.png" alt="Coat of Arms of Armenia" class="icon">
+        <img src="dproc.png" alt="Gyumri No.1 Senior School Emblem" class="icon">
+        <img src="ombuds.png" alt="Student Ombudsman Project Emblem" class="icon">
+      </div>
+      <h1>RA MESCS "Gyumri No. 1 Senior School" SOE<br>Educational Project "Student Ombudsman" — 11th Grade</h1>
+      <p>Protector of Students' Rights</p>
+    </header>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Ombudsman</a>
+      <a href="#rights">Rights</a>
+      <a href="#complaint">How to Apply</a>
+      <a href="#documents">Documents</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section id="home"><h2>Welcome</h2>
+        <p>This is an educational project of the 11th grade (Humanitarian Law stream) dedicated to the protection of students' rights.</p>
+      </section>
+
+      <section id="about"><h2>The Ombudsman</h2>
+        <p>The Ombudsman is an independent official who protects the violated rights of students in accordance with the legislation of the Republic of Armenia and international norms.</p>
+      </section>
+
+      <section id="rights"><h2>Students' Rights include:</h2>
+        <ol>
+          <li>To receive general education in accordance with state standards.</li>
+          <li>To choose an educational institution and form of study.</li>
+          <li>Free use of the educational base.</li>
+          <li>To participate in events.</li>
+          <li>To be protected from pressure and harassment.</li>
+          <li>To participate in school management.</li>
+          <li>To receive information.</li>
+          <li>To freely express their opinion.</li>
+        </ol>
+      </section>
+
+      <section id="complaint"><h2>How to Contact the Ombudsman</h2>
+        <ol>
+          <li>Through the school complaint box (anonymous or named).</li>
+          <li>By personally approaching the Ombudsman.</li>
+          <li>By email: <a href="mailto:ombudsofN1.official@gmail.com">ombudsofN1.official@gmail.com</a></li>
+        </ol>
+      </section>
+
+      <section id="documents"><h2>Charter and Documents</h2>
+        <p>Download or view the important documents of our project.</p>
+        <ul>
+          <li><a href="ombudsman-charter.pdf" class="pdf-link" target="_blank">Charter (PDF)</a></li>
+          <li><a href="phone-regulation.pdf" class="pdf-link" target="_blank">Phone Usage Rules (PDF)</a></li>
+          <li><a href="ombudsman-report-2026.pdf" class="pdf-link" target="_blank">Ombudsman Report 2025-2026 (PDF)</a></li>
+        </ul>
+      </section>
+
+      <section id="team"><h2>Our Team</h2>
+        <p>Members of our commission:</p>
+        <ul>
+          <li>Avetik Arakelyan (Student Rights Protector)</li>
+          <li>Tigran Abgaryan</li>
+          <li>Hripsime Zaduryan</li>
+          <li>Anzhela Aristakesyan</li>
+          <li>Mane Hartenyan</li>
+          <li>Ani Norsoyan</li>
+          <li>Liana Poghosyan</li>
+        </ul>
+      </section>
+
+      <section id="contact"><h2>Contact Us</h2>
+        <p><a href="mailto:ombudsofN1.official@gmail.com" class="pdf-link">ombudsofN1.official@gmail.com</a></p>
+        <p>Phone: <a href="tel:+37494876400" class="pdf-link">+374 94 87 64 00</a></p>
+        <p>Our YouTube channel: <a href="https://www.youtube.com/@ombudsofN1.official" target="_blank" class="pdf-link">ombudsofN1.official</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 RA MESCS "Gyumri No. 1 Senior School" SOE — Educational Project "Student Ombudsman" | 11th Grade</p>
+    </footer>
+  </div>
+
+  <!-- Русский -->
+  <div id="content-ru" class="content">
+    <header>
+      <div class="header-icons">
+        <img src="flag.png" alt="Флаг Армении" class="icon">
+        <img src="coat_of_arms.png" alt="Герб Армении" class="icon">
+        <img src="dproc.png" alt="Эмблема Гюмрийской старшей школы №1" class="icon">
+        <img src="ombuds.png" alt="Эмблема проекта Школьный омбудсмен" class="icon">
+      </div>
+      <h1>ГНКО МОНКС РА «Гюмрийская старшая школа №1»<br>Образовательный проект «Школьный омбудсмен» — 11 класс</h1>
+      <p>Защитник прав учащихся</p>
+    </header>
+
+    <nav>
+      <a href="#home">Главная</a>
+      <a href="#about">Омбудсмен</a>
+      <a href="#rights">Права</a>
+      <a href="#complaint">Как обратиться</a>
+      <a href="#documents">Документы</a>
+      <a href="#team">Команда</a>
+      <a href="#contact">Обратная связь</a>
+    </nav>
+
+    <main>
+      <section id="home"><h2>Добро пожаловать</h2>
+        <p>Это учебный проект 11 класса (гуманитарно-правовой поток), посвященный защите прав учащихся.</p>
+      </section>
+
+      <section id="about"><h2>Омбудсмен</h2>
+        <p>Омбудсмен — это независимое должностное лицо, которое защищает нарушенные права учащихся в соответствии с законодательством РА и международными нормами.</p>
+      </section>
+
+      <section id="rights"><h2>Права учащихся:</h2>
+        <ol>
+          <li>Получать общее образование в соответствии с государственными стандартами.</li>
+          <li>Выбирать образовательное учреждение и форму обучения.</li>
+          <li>Бесплатно пользоваться учебной базой.</li>
+          <li>Участвовать в мероприятиях.</li>
+          <li>Быть защищенным от давления и посягательств.</li>
+          <li>Участвовать в управлении школой.</li>
+          <li>Получать информацию.</li>
+          <li>Свободно выражать свое мнение.</li>
+        </ol>
+      </section>
+
+      <section id="complaint"><h2>Как обратиться к омбудсмену</h2>
+        <ol>
+          <li>Через школьный ящик (анонимно или с указанием имени).</li>
+          <li>Лично подойти к омбудсмену.</li>
+          <li>По электронной почте: <a href="mailto:ombudsofN1.official@gmail.com">ombudsofN1.official@gmail.com</a></li>
+        </ol>
+      </section>
+
+      <section id="documents"><h2>Устав и документы</h2>
+        <p>Скачайте или просмотрите важные документы нашего проекта.</p>
+        <ul>
+          <li><a href="ombudsman-charter.pdf" class="pdf-link" target="_blank">Устав (PDF)</a></li>
+          <li><a href="phone-regulation.pdf" class="pdf-link" target="_blank">Правила использования телефонов (PDF)</a></li>
+          <li><a href="ombudsman-report-2026.pdf" class="pdf-link" target="_blank">Отчет омбудсмена 2025-2026 (PDF)</a></li>
+        </ul>
+      </section>
+
+      <section id="team"><h2>Наша команда</h2>
+        <p>Члены нашей комиссии:</p>
+        <ul>
+          <li>Аветик Аракелян (Защитник прав учащихся)</li>
+          <li>Тигран Абгарян</li>
+          <li>Рипсиме Задурян</li>
+          <li>Анжела Аристакесян</li>
+          <li>Мане Гартенян</li>
+          <li>Ани Норсоян</li>
+          <li>Лиана Погосян</li>
+        </ul>
+      </section>
+
+      <section id="contact"><h2>Обратная связь</h2>
+        <p><a href="mailto:ombudsofN1.official@gmail.com" class="pdf-link">ombudsofN1.official@gmail.com</a></p>
+        <p>Телефон: <a href="tel:+37494876400" class="pdf-link">+374 94 87 64 00</a></p>
+        <p>Наш YouTube канал: <a href="https://www.youtube.com/@ombudsofN1.official" target="_blank" class="pdf-link">ombudsofN1.official</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 ГНКО МОНКС РА «Гюмрийская старшая школа №1» — Образовательный проект «Школьный омбудсмен» | 11 класс</p>
+    </footer>
+  </div>
+
   <script>
     function switchLanguage(lang) {
       document.querySelectorAll('.content').forEach(el => el.classList.remove('active'));
       document.getElementById('content-' + lang).classList.add('active');
       document.documentElement.lang = lang;
+
       const titles = {
-        hy: "Ուսումնական նախագիծ «Աշակերտական օմբուդսմեն» | ՀՀ ԿԳՄՍՆ «Գյումրու թիվ 1 ավագ դպրոց» ՊՈԱԿ",
-        en: "Educational Project \"Student Ombudsman\" | RA MESCS \"Gyumri No. 1 Senior School\" SOE",
-        ru: "Образовательный проект «Школьный омбудсмен» | МОНКС РА «Гюмрийская старшая школа №1» ГНКО"
+        hy: "Ուսումնական նախագիծ «Աշակերտական օմբուդսմեն» | Գյումրու թիվ 1 ավագ դպրոց",
+        en: "Educational Project \"Student Ombudsman\" | RA MESCS \"Gyumri No. 1 Senior School\"",
+        ru: "Образовательный проект «Школьный омбудсмен» | МОНКС РА «Гюмрийская старшая школа №1»"
       };
       document.title = titles[lang] || titles.hy;
     }
+
+    // Default language
     switchLanguage('hy');
   </script>
 </body>
